@@ -2,7 +2,6 @@ calls = 0
 def count_calls():
     global calls
     calls += 1
-
 def string_info(m):
     string_ = (len(m), m.upper(), m.lower())
     count_calls()
@@ -10,10 +9,7 @@ def string_info(m):
 def is_contains(a, b):
     a = a.upper()
     for i in range(len(b)):
-        #print (i)
         b[i] = b[i].upper()
-        #print(type(b))
-        #print(b[i])
     is_cont = a in b
     count_calls()
     return is_cont
